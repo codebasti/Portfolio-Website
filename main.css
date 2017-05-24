@@ -1,0 +1,240 @@
+/* Global Styles */
+/* h1 used for: Name,  */
+h1 {
+  font-size: 1.3em;
+  font-weight: 500;
+  -webkit-margin-after: 0em;
+  -webkit-margin-before: 0em;
+}
+
+/* h2 used for: Ninja-Description, */
+h2 {
+  float: right;
+  font-size: 0.9em;
+  font-weight: 200;
+  -webkit-margin-before: 0.2em;
+  -webkit-margin-after: 0.4em;
+}
+
+/* h3 used for: Featured Work, Skills, */
+h3 {
+  color: black;
+}
+
+h3::first-letter {
+  color: #ff7f2a;
+}
+
+/* h4 used for: Columns, Skillcolumns,  */
+h4 {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  color: #2d3c49;
+}
+
+a {
+  text-decoration: none;
+  color: #2d3c49;
+  font-size: 0.7em;
+  word-break: break-all;
+}
+
+p {
+  color: grey;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  -webkit-margin-before: 0.3em;
+  -webkit-margin-after: 0.3em;
+}
+
+/* Container */
+#container {
+  margin: auto;
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: 900px;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Header */
+#box_logo {
+  width: 25%;
+  min-width: 70px;
+}
+
+#logo {
+  width: 100%;
+  max-width: 150px;
+}
+
+#box_name {
+  width: 50%;
+  position: relative;
+  min-width: 142px;
+  min-height: 50px;
+}
+
+#boxnametobot {
+  position: absolute;
+  bottom:0;
+  right: 0;
+}
+
+/* Big Picture */
+#box_bigpic {
+  width: 100%;
+  padding-top: 5px;
+}
+
+#bigpic {
+  width: 100%;
+}
+
+/* Featured Work */
+#featuredwork {
+  width: 100%;
+  text-align: center;
+}
+
+#featuredheadline {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#workshow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.featuredpic {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  box-shadow: 5px 5px 5px #d8d8d8;
+}
+
+.featuredlink {
+  width: 80%;
+}
+
+/* About Me */
+#aboutme {
+  width: 100%;
+  text-align: center;
+}
+
+#skillheadline {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#skillshow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillcolumn {
+  width: 20%;
+  padding-left: 10%;
+  padding-bottom: 40px;
+}
+
+.skillpic {
+  width: 100%;
+  max-width: 80px;
+}
+
+/* Footer */
+#contact {
+  font-size: 1em;
+  color: grey;
+}
+
+/* Ultra-small screen (old Smartphones/special devices) */
+@media screen and (max-width:227px){
+  .container {
+    justify-content: center;
+  }
+
+  h2 {
+    float: none;
+    text-align: center;
+  }
+}
+
+/* Most Tablets, Notebooks or small screens */
+@media screen and (min-width: 500px){
+  .column {
+    width: 50%;
+  }
+
+  #featuredheadline {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  #skillheadline {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .skillcolumn {
+    width: 20%;
+    padding-left: 4%;
+  }
+}
+
+/* Desktop and high quality Notebook users */
+@media screen and (min-width: 850px){
+  .column {
+    width: 33%;
+  }
+
+  #bigpic {
+    max-height: 450px;
+  }
+
+  #skillheadline {
+    margin-top: 60px;
+  }
+
+  .skillcolumn {
+    width: 20%;
+    padding-left: 4%;
+  }
+
+  h1 {
+    font-size: 1.9em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+}
